@@ -4,7 +4,7 @@ window.settings = {
   // 站点描述
   description: '访问ChatGPT，解锁流媒体，安全匿名加速服务',
   // API
-  host: 'http://38.207.175.54:12580',
+  host: 'https://1324398847-1vckz3zmzj-hk.scf.tencentcs.com',
   // 主题
   theme: {
     sidebar: 'light',
