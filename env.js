@@ -1,6 +1,6 @@
 window.settings = {
   // 站点标题
-  title: '樱花云',
+  title: '樱花云☁',
   // 站点描述
   description: '高速 | 匿名 | 稳定 | 实惠 | 保障',
   // API
