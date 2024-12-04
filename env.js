@@ -7,9 +7,9 @@ window.settings = {
   host: 'https://1324398847-1vckz3zmzj-hk.scf.tencentcs.com',
   // 主题
   theme: {
-    sidebar: 'light',
+    sidebar: 'dark',
     header: 'dark',
-    color: 'default'
+    color: 'darkblue'
   },
   // 背景
   background_url: 'https://www.hostpic.org/images/2401032021260103.jpeg',
