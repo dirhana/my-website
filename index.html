@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./components.chunk.css">
+    <link rel="stylesheet" href="./youmoni.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <script src="./env.js"></script>
+    <script src="./language/zh-CN.js"></script>
+    <script src="./language/zh-TW.js"></script>
+    <script src="./language/en-US.js"></script>
+    <script src="./language/ja-JP.js"></script>
+    <script src="./language/vi-VN.js"></script>
+    <script src="./language/ko-KR.js"></script>
+    <script src="./language/fa-IR.js"></script>
+    <!--<script>window.routerBase = "/";</script>-->
+    <!--右下角按钮-->
+    <style>
+    .kj-download-btn,.kj-contact-btn{position:fixed;right:20px;padding:12px 20px;border-radius:30px;font-size:16px;box-shadow:0 4px 8px rgba(0,0,0,0.2);cursor:pointer;transition:all 0.3s ease-in-out;opacity:0;transform:translateY(30px);z-index:9999;pointer-events:auto}.kj-download-btn{bottom:80px;background-color:#007bff;color:#fff}.kj-contact-btn{bottom:20px;background-color:#28a745;color:#fff}.kj-download-btn.show,.kj-contact-btn.show{opacity:1;transform:translateY(0)}.kj-download-btn:hover,.kj-contact-btn:hover{box-shadow:0 6px 12px rgba(0,0,0,0.3)}.kj-download-btn:active,.kj-contact-btn:active{transform:translateY(4px)}@media (max-width:768px){.kj-download-btn,.kj-contact-btn{display:none}}
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- 客服 -->
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "5d7be2dc-fec3-44a5-a1e9-87919e6d48d6";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+    <!--右下角按钮-->
+    <script>
+    var downloadBtn=document.createElement('div');downloadBtn.className='kj-download-btn';downloadBtn.innerText='下载客户端';var contactBtn=document.createElement('div');contactBtn.className='kj-contact-btn';contactBtn.innerText='购买套餐';document.body.appendChild(downloadBtn);document.body.appendChild(contactBtn);setTimeout(function(){downloadBtn.classList.add('show');contactBtn.classList.add('show');},500);downloadBtn.addEventListener('click',function(){window.location.href='/#/knowledge';});contactBtn.addEventListener('click',function(){window.location.href='/#/plan';});
+    </script>
+    <script src="./vendors.async.js"></script>
+    <script src="./components.async.js"></script>
+    <script src="./youmoni.js"></script>
+    <script src="./custom_code.js"></script>
+</body>
+
+</html>
