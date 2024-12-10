@@ -11,7 +11,7 @@ window.settings = {
     header: 'dark',
     color: 'darkblue'
   },
-  // 背景 https://www.hostpic.org/images/2401032021260103.jpeg
+  // https://www.hostpic.org/images/2401032021260103.jpeg
   background_url: 'https://img.meituan.net/video/dceb5e50e20ca54dd186dc82ecf2987d61135.jpg',
   // crisp
   crisp_id: '5d7be2dc-fec3-44a5-a1e9-87919e6d48d6',
