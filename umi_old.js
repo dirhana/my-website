@@ -1115,7 +1115,7 @@
                             window.location.href = e.href
                         }
                     }, c.a.createElement("div", null, c.a.createElement("img", {
-                        src: "".concat((null === (t = window.settings) || void 0 === t ? void 0 : t.assets_path) || "", "/./img/icon/").concat(e.title, ".png")
+                        src: "".concat((null === (t = window.settings) || void 0 === t ? void 0 : t.assets_path) || "", "/./images/icon/").concat(e.title, ".png")
                     })), c.a.createElement("div", null, Object(p["formatMessage"])({
                         id: "\u5bfc\u5165\u5230"
                     }), " ", e.title))
@@ -16615,7 +16615,7 @@
                         paddingTop: 50
                     }
                 }, o.a.createElement("a", {
-                    href: "https://github.com/wyx2685/education"
+                    href: "https://github.com/education"
                 }, "education"), " is best.")
             }
         }
@@ -17192,7 +17192,7 @@
           , u = s.host
           , l = document.createElement("link");
         if (l.rel = "stylesheet",
-        l.href = u ? "./theme/".concat(c.color, ".css") : "./theme/default/assets/theme/".concat(c.color, ".css"),
+        l.href = u ? "./theme/".concat(c.color, ".css") : "/theme/default/assets/theme/".concat(c.color, ".css"),
         document.getElementsByTagName("head")[0].appendChild(l),
         Object(i["e"])("i18n"))
             Object(o["setLocale"])(Object(i["e"])("i18n"));
@@ -24071,6 +24071,10 @@
                             // s.a.push(n),
                             // 新增
                             n === '/navigation' ? window.open("http://64.64.233.248:5050", "_blank") : s.a.push(n),
+                            this.props.dispatch({
+                                type: "layout/showNav",
+                                show: !1
+                            })
                             this.props.dispatch({
                                 type: "layout/showNav",
                                 show: !1
@@ -31020,7 +31024,7 @@
                     type: "primary",
                     onClick: ()=>h.a.push(Object(p["m"])(d) ? "/plan/" + d.plan_id : "/plan")
                 }, Object(b["formatMessage"])({
-                    id: Object(p["m"])(d) ? "\u7eed\u8d39\u8ba2\u9605" : "\u8d2d\u4e70\u5957\u9910"
+                    id: Object(p["m"])(d) ? "\u7eed\u8d39\u5957\u9910" : "\u8d2d\u4e70\u5957\u9910"
                 })))), l.a.createElement("div", null)))) : l.a.createElement("a", {
                     onClick: ()=>h.a.push("/plan")
                 }, l.a.createElement("div", null, l.a.createElement("div", {
@@ -31044,7 +31048,7 @@
                 }, l.a.createElement("h3", {
                     className: "block-title"
                 }, Object(b["formatMessage"])({
-                    id: "\u5feb\u6377\u8bbf\u95ee\u0020\u002d\u0020\u5fc5\u770b\uff01\uff01\uff01"
+                    id: "\u5feb\u6377\u8bbf\u95ee\u0020\u002d\u0020\u65b0\u624b\u5fc5\u770b"
                 }))), l.a.createElement("div", {
                     className: "block-content p-0"
                 }, l.a.createElement("div", {
@@ -31059,7 +31063,7 @@
                 })), l.a.createElement("div", {
                     className: "description"
                 }, Object(b["formatMessage"])({
-                    id: "\u4e0b\u8f7d\u5ba2\u6237\u7aef\u4ee5\u53ca\u5b66\u4e60\u5982\u4f55\u4f7f\u7528"
+                    id: "\u5b66\u4e60\u5982\u4f55\u4f7f\u7528"
                 }), " ", null === (t = window) || void 0 === t ? void 0 : null === (n = t.settings) || void 0 === n ? void 0 : n.title), l.a.createElement("i", {
                     style: {
                         float: "right"
@@ -31070,7 +31074,7 @@
                 }, l.a.createElement("div", {
                     className: "education-shortcuts-item"
                 }, l.a.createElement("div", null, Object(b["formatMessage"])({
-                    id: "\u4e00\u952e\u590d\u5236\u002f\u5bfc\u5165\u8ba2\u9605"
+                    id: "\u4e00\u952e\u5bfc\u5165\u002f\u590d\u5236\u8ba2\u9605"
                 })), l.a.createElement("div", {
                     className: "description"
                 }, Object(b["formatMessage"])({
@@ -32014,7 +32018,7 @@
                   , r = this.props.location.query.id;
                 return s.a.createElement(c["a"], o()({}, this.props, {
                     title: Object(l["formatMessage"])({
-                        id: "\u4f7f\u7528\u6559\u7a0b\u0026\u4e0b\u8f7d\u5ba2\u6237\u7aef"
+                        id: "\u4f7f\u7528\u6559\u7a0b"
                     })
                 }), s.a.createElement("main", {
                     id: "main-container"
@@ -44583,31 +44587,7 @@
                                         }
                                     });
                                 case 8:
-                                    // window.$crisp && window.$crisp.push(["set", "session:data", [[["Plan", (null === (o = r.data.plan) || void 0 === o ? void 0 : o.name) || "-"], ["ExpireTime", f()(1e3 * r.data.expired_at).format("YYYY-MM-DD")], ["UsedTraffic", Object(u["b"])(r.data.u + r.data.d)], ["AllTraffic", Object(u["b"])(r.data.transfer_enable)]]]]);
-                                    
-                                    // var xhr = new XMLHttpRequest();
-                                    // xhr.open('GET', 'https://ipapi.co/json', false);
-                                    // xhr.send();
-                                    // var data = JSON.parse(xhr.responseText);
-                                    
-                                    var userAgent = navigator.userAgent;
-                                    
-                                    // console.log(`当前IP地址：${data.ip}，所在国家：${data.country_name}，所在地区：${data.region}，所在城市：${data.city}，UA信息：${userAgent}`);
-                                    
-                                    window.$crisp && window.$crisp.push(["set", "session:data", [
-                                        [
-                                            ["Plan", (null === (o = r.data.plan) || void 0 === o ? void 0 : o.name) || "-"],
-                                            ["ExpireTime", f()(1e3 * r.data.expired_at).format("YYYY-MM-DD")],
-                                            ["UsedTraffic", Object(u["b"])(r.data.u + r.data.d)],
-                                            ["AllTraffic", Object(u["b"])(r.data.transfer_enable)],
-                                            // ["ip", data.ip],
-                                            // ["country", data.country_name],
-                                            // ["region", data.region],
-                                            // ["city", data.city],
-                                            ["userAgent", userAgent]
-                                        ]
-                                    ]]);
-
+                                    window.$crisp && window.$crisp.push(["set", "session:data", [[["Plan", (null === (o = r.data.plan) || void 0 === o ? void 0 : o.name) || "-"], ["ExpireTime", f()(1e3 * r.data.expired_at).format("YYYY-MM-DD")], ["UsedTraffic", Object(u["b"])(r.data.u + r.data.d)], ["AllTraffic", Object(u["b"])(r.data.transfer_enable)]]]]);
                                 case 9:
                                 case "end":
                                     return e.stop()
@@ -50426,7 +50406,7 @@
                             },
                             href: "javascript:void(0);",
                             onClick: ()=>{
-                                y()(window.location.origin + window.location.pathname + "#/register?code=" + e),
+                                y()("https://www.yhyaff.com?path=register&code=" + e),  // y()(window.location.origin + window.location.pathname + "#/register?code=" + e),
                                 f["a"].success(Object(w["formatMessage"])({
                                     id: "\u590d\u5236\u6210\u529f"
                                 }))
