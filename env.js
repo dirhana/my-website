@@ -4,7 +4,7 @@ window.settings = {
   // 站点描述
   description: '高速 | 匿名 | 稳定 | 实惠 | 保障',
   // API
-  host: 'https://client-anfodpjkee.us-west-1.fcapp.run',
+  host: 'https://1332686496-6kh8zot7aw.ap-shanghai.tencentscf.com',
   // 主题
   theme: {
     sidebar: 'dark',
