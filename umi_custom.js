@@ -47370,7 +47370,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(i["a"])("/user/knowledge/fetch", {
+                                    Object(i["a"])("/KnowledgeList", {
                                         id: r,
                                         language: o
                                     });
