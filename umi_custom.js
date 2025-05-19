@@ -6713,7 +6713,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/order/checkout", {
+                                    Object(a["b"])("/OrderPay", {
                                         trade_no: o,
                                         method: i
                                     });
@@ -6778,7 +6778,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/order/checkout", {
+                                    Object(a["b"])("/OrderPay", {
                                         trade_no: o,
                                         method: i,
                                         token: s
