@@ -44901,7 +44901,7 @@
                                     return n.abrupt("return");
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["a"])("/user/checkLogin");
+                                    Object(a["a"])("/userCheckLogin");
                                 case 6:
                                     if (i = n.sent,
                                     200 === i.code) {
