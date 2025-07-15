@@ -6551,7 +6551,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/order/save", r);
+                                    Object(a["b"])("/OrderSave", r);
                                 case 6:
                                     return i = n.sent,
                                     n.next = 9,
@@ -6595,7 +6595,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["a"])("/user/order/detail", {
+                                    Object(a["a"])("/OrderDetail", {
                                         trade_no: r
                                     });
                                 case 6:
@@ -6640,7 +6640,7 @@
                                     return n = e.tradeNo,
                                     r = e.callback,
                                     t.next = 3,
-                                    Object(a["a"])("/user/order/check", {
+                                    Object(a["a"])("/OrderStatus", {
                                         trade_no: n
                                     });
                                 case 3:
@@ -6669,7 +6669,7 @@
                                     return r = e.complete,
                                     o = t.put,
                                     n.next = 4,
-                                    Object(a["a"])("/user/order/getPaymentMethod");
+                                    Object(a["a"])("/GetPay");
                                 case 4:
                                     if (i = n.sent,
                                     200 === i.code) {
@@ -6713,7 +6713,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/order/checkout", {
+                                    Object(a["b"])("/OrderPay", {
                                         trade_no: o,
                                         method: i
                                     });
@@ -6778,7 +6778,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/order/checkout", {
+                                    Object(a["b"])("/OrderPay", {
                                         trade_no: o,
                                         method: i,
                                         token: s
@@ -6825,7 +6825,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["a"])("/user/order/fetch", r);
+                                    Object(a["a"])("/OrderList", r);
                                 case 6:
                                     return i = n.sent,
                                     n.next = 9,
@@ -6875,7 +6875,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/order/cancel", {
+                                    Object(a["b"])("/CancelOrder", {
                                         trade_no: r
                                     });
                                 case 6:
@@ -7543,7 +7543,7 @@
                                 case 0:
                                     return n = t.put,
                                     e.next = 3,
-                                    Object(i["a"])("/user/telegram/getBotInfo");
+                                    Object(i["a"])("/GetTgBotInfo");
                                 case 3:
                                     if (r = e.sent,
                                     200 === r.code) {
@@ -11330,7 +11330,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(i["a"])("/user/server/fetch");
+                                    Object(i["a"])("/ServerList");
                                 case 5:
                                     return r = e.sent,
                                     e.next = 8,
@@ -15925,7 +15925,7 @@
                         id: "\u5982\u679c\u4f60\u7684\u8ba2\u9605\u5730\u5740\u6216\u4fe1\u606f\u6cc4\u9732\u53ef\u4ee5\u8fdb\u884c\u6b64\u64cd\u4f5c\u3002\u91cd\u7f6e\u540e\u4f60\u7684UUID\u53ca\u8ba2\u9605\u5c06\u4f1a\u53d8\u66f4\uff0c\u9700\u8981\u91cd\u65b0\u8fdb\u884c\u8ba2\u9605\u3002"
                     }),
                     onOk() {
-                        Object(d["a"])("/user/resetSecurity").then(t=>{
+                        Object(d["a"])("/ResetSubLink").then(t=>{
                             200 === t.code && (c["a"].success(Object(m["formatMessage"])({
                                 id: "\u91cd\u7f6e\u6210\u529f"
                             })),
@@ -17695,7 +17695,7 @@
                                 case 0:
                                     return n = t.put,
                                     e.next = 3,
-                                    Object(i["a"])("/user/comm/config");
+                                    Object(i["a"])("/CommConfig");
                                 case 3:
                                     if (r = e.sent,
                                     200 === r.code) {
@@ -19826,7 +19826,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(i["a"])("/user/plan/fetch");
+                                    Object(i["a"])("/PlanList");
                                 case 5:
                                     return r = e.sent,
                                     e.next = 8,
@@ -19881,7 +19881,7 @@
                                     });
                                 case 8:
                                     return n.next = 10,
-                                    Object(i["a"])("/user/plan/fetch", {
+                                    Object(i["a"])("/PlanList", {
                                         id: r
                                     });
                                 case 10:
@@ -30291,7 +30291,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(i["a"])("/user/stat/getTrafficLog");
+                                    Object(i["a"])("/GetTrafficLog");
                                 case 5:
                                     return r = e.sent,
                                     e.next = 8,
@@ -32413,7 +32413,7 @@
                 this.state = {}
             }
             componentDidMount() {
-                this.fetchData()
+                this.fetchData() 
             }
             fetchData() {
                 this.props.dispatch({
@@ -36190,7 +36190,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["a"])("/user/invite/details", {
+                                    Object(a["a"])("/InviteDetail", {
                                         current: r,
                                         page_size: o
                                     });
@@ -36246,7 +36246,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(a["a"])("/user/invite/fetch");
+                                    Object(a["a"])("/InviteList");
                                 case 5:
                                     return r = e.sent,
                                     e.next = 8,
@@ -36292,7 +36292,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(a["a"])("/user/invite/save");
+                                    Object(a["a"])("/CreateInvite");
                                 case 5:
                                     return o = e.sent,
                                     e.next = 8,
@@ -38966,7 +38966,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(a["a"])("/user/ticket/fetch");
+                                    Object(a["a"])("/TicketList");
                                 case 5:
                                     return r = e.sent,
                                     e.next = 8,
@@ -39007,7 +39007,7 @@
                                     return r = e.id,
                                     o = t.put,
                                     n.next = 4,
-                                    Object(a["a"])("/user/ticket/fetch", {
+                                    Object(a["a"])("/TicketList", {
                                         id: r
                                     });
                                 case 4:
@@ -39042,7 +39042,7 @@
                                     return r = e.id,
                                     o = t.put,
                                     n.next = 4,
-                                    Object(a["b"])("/user/ticket/close", {
+                                    Object(a["b"])("/CloseTicket", {
                                         id: r
                                     });
                                 case 4:
@@ -39079,7 +39079,7 @@
                                     return o = e.sent,
                                     i = o.saveData,
                                     e.next = 7,
-                                    Object(a["b"])("/user/ticket/save", i);
+                                    Object(a["b"])("/CreateTicket", i);
                                 case 7:
                                     if (s = e.sent,
                                     200 === s.code) {
@@ -39134,7 +39134,7 @@
                                 case 8:
                                     return r["a"].loading("\u53d1\u9001\u4e2d"),
                                     n.next = 11,
-                                    Object(a["b"])("/user/ticket/reply", i()({
+                                    Object(a["b"])("/ReplyTicket", i()({
                                         id: o
                                     }, p));
                                 case 11:
@@ -39182,7 +39182,7 @@
                                     r = e.withdrawMethod,
                                     o = e.callback,
                                     t.next = 3,
-                                    Object(a["b"])("/user/ticket/withdraw", {
+                                    Object(a["b"])("/CommissionWithdraw", {
                                         withdraw_account: n,
                                         withdraw_method: r
                                     });
@@ -40310,7 +40310,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(i["b"])("/user/coupon/check", {
+                                    Object(i["b"])("/CouponCheck", {
                                         code: r,
                                         plan_id: o
                                     });
@@ -44555,7 +44555,7 @@
                                 case 0:
                                     return n = t.put,
                                     e.next = 3,
-                                    Object(a["a"])("/user/getSubscribe");
+                                    Object(a["a"])("/GetSub");
                                 case 3:
                                     if (r = e.sent,
                                     200 === r.code) {
@@ -44589,7 +44589,7 @@
                                 case 0:
                                     return n = t.put,
                                     e.next = 3,
-                                    Object(a["a"])("/user/getStat");
+                                    Object(a["a"])("/GetStat");
                                 case 3:
                                     if (r = e.sent,
                                     200 === r.code) {
@@ -44629,7 +44629,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(a["a"])("/user/info");
+                                    Object(a["a"])("/UserInfo");
                                 case 5:
                                     return r = e.sent,
                                     e.next = 8,
@@ -44686,7 +44686,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/update", {
+                                    Object(a["b"])("/UserUpdate", {
                                         [r]: o
                                     });
                                 case 6:
@@ -44735,7 +44735,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/changePassword", {
+                                    Object(a["b"])("/ChangePassword", {
                                         old_password: o,
                                         new_password: i
                                     });
@@ -44782,7 +44782,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["b"])("/user/redeemgiftcard", {
+                                    Object(a["b"])("/RedeemGiftCard", {
                                         giftcard: o
                                     });
                                 case 6:
@@ -44845,7 +44845,7 @@
                                     });
                                 case 3:
                                     return e.next = 5,
-                                    Object(a["a"])("/user/resetSecurity");
+                                    Object(a["a"])("/ResetSubLink");
                                 case 5:
                                     return o = e.sent,
                                     e.next = 8,
@@ -44886,7 +44886,7 @@
                                     return n.abrupt("return");
                                 case 4:
                                     return n.next = 6,
-                                    Object(a["a"])("/user/checkLogin");
+                                    Object(a["a"])("/userCheckLogin");
                                 case 6:
                                     if (i = n.sent,
                                     200 === i.code) {
@@ -44938,7 +44938,7 @@
                                     o = e.callback,
                                     i = t.put,
                                     n.next = 4,
-                                    Object(a["b"])("/user/transfer", {
+                                    Object(a["b"])("/CommissionTransfer", {
                                         transfer_amount: 100 * r
                                     });
                                 case 4:
@@ -46695,7 +46695,7 @@
                                     return r = e.complete,
                                     o = t.put,
                                     n.next = 4,
-                                    Object(i["a"])("/user/notice/fetch");
+                                    Object(i["a"])("/NoticeList");
                                 case 4:
                                     if (s = n.sent,
                                     200 === s.code) {
@@ -47302,7 +47302,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(i["a"])("/user/knowledge/fetch", {
+                                    Object(i["a"])("/KnowledgeList", {
                                         language: r,
                                         keyword: o
                                     });
@@ -47355,7 +47355,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(i["a"])("/user/knowledge/fetch", {
+                                    Object(i["a"])("/KnowledgeList", {
                                         id: r,
                                         language: o
                                     });
@@ -51913,7 +51913,7 @@
         window.settings.host && (u = window.settings.host),
         document.title = window.settings.title;
         var l = {
-            serviceHost: c ? "http://localhost/api/v1" : u + "/api/v1"
+            serviceHost: c ? "http://localhost/api/v1" : u + "/WebApi"
         }
           , f = n("Y2fQ")
           , p = n("yWgo");
@@ -57361,7 +57361,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(i["b"])("/passport/auth/login", {
+                                    Object(i["b"])("/Login", {
                                         email: r,
                                         password: o
                                     });
