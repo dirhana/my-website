@@ -60188,9 +60188,7 @@
                     id: "\u7b2c\u4e8c\u6b65"
                 })), a.a.createElement("div", null, Object(l["formatMessage"])({
                     id: "\u5411\u673a\u5668\u4eba\u53d1\u9001\u4f60\u7684"
-                }), a.a.createElement("br", null), a.a.createElement("code", {
-                    onClick: ()=>u()("/bind " + t.subscribe_url)
-                }, "/bind ", t.subscribe_url))) : a.a.createElement(o["a"], {
+                }))) : a.a.createElement(o["a"], {
                     type: "loading",
                     style: {
                         fontSize: 16
