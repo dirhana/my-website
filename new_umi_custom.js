@@ -57525,7 +57525,7 @@
                                     });
                                 case 4:
                                     return n.next = 6,
-                                    Object(i["b"])("/passport/auth/forget", {
+                                    Object(i["b"])("/resetPassword", {
                                         email: r,
                                         password: o,
                                         email_code: a
